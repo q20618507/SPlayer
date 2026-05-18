@@ -14,15 +14,7 @@ import log from "./logger";
 // icon
 import icon from "../../public/icons/favicon.png?asset";
 
-// 屏蔽报错
-process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 
-// 模拟打包
-Object.defineProperty(app, "isPackaged", {
-  get() {
-    return true;
-  },
-});
 
 // 主进程
 class MainProcess {
